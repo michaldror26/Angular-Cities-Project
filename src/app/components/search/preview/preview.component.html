@@ -1,0 +1,51 @@
+<table *ngIf="choosenCity" >
+  <tr>
+    <th> שם ישוב</th>
+    <td>{{choosenCity.name}}</td>
+  </tr>
+  <tr>
+    <th>שם ישוב לועזי</th>
+     <td>{{choosenCity.english_name}}</td>
+  </tr>
+  <tr *ngIf="detailToPreview=='semel_yeshuv'">
+    <th>סמל ישוב</th>
+    <td>{{choosenCity.semel_yeshuv}}</td>
+  </tr>
+  <tr *ngIf="detailToPreview=='semel_napa'">
+    <th>
+      סמל נפה</th>
+    <td>
+      {{choosenCity.semel_napa}}</td>
+  </tr>
+  <tr *ngIf="detailToPreview=='shem_napa'" >
+    <th>
+      שם נפה</th>
+    <td>
+      {{choosenCity.shem_napa}}</td>
+  </tr>
+  <tr *ngIf="detailToPreview=='semel_lishkat_mana'">
+    <th>
+      סמל לשכת מנא</th>
+    <td>
+      {{choosenCity.semel_lishkat_mana}}</td>
+  </tr>
+  <tr *ngIf="detailToPreview=='lishka'" >
+    <th>
+      לשכה</th>
+    <td>
+      {{choosenCity.lishka}}</td>
+  </tr>
+  <tr *ngIf="detailToPreview=='semel_moatza_ezorit'" >
+    <th>
+      סמל מועצה איזורית</th>
+    <td>
+      {{choosenCity.semel_moatza_ezorit}}</td>
+  </tr>
+  <tr *ngIf="detailToPreview=='shem_moaatza'" >
+    <th>
+      שם מועצה</th>
+    <td>
+      {{choosenCity.shem_moaatza}}</td>
+  </tr>
+
+</table>

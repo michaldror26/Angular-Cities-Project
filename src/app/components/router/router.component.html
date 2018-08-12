@@ -1,0 +1,16 @@
+<ul class="nav nav-tabs">
+    <li routerLinkActive="active"  class="nav-item" (click)="ActiveTab='search'" ><!--routerLinkActive="active"-->
+        <a routerLink='search' class="nav-link"
+         [class.active]='ActiveTab=="search"?true:false'>search</a>
+    </li>
+    <li routerLinkActive="active" class="nav-item" (click)="ActiveTab='cities'">
+        <a [routerLink]="['cities-in-cards','all']"  class="nav-link"
+         [class.active]='ActiveTab=="cities"?true:false'>cities in cards</a>
+    </li>
+    <li routerLinkActive="active" class="nav-item"  (click)="ActiveTab='city'" >
+        <a [routerLink]="['city-details','']"  class="nav-link"
+         [class.active]='ActiveTab=="city"?true:false'   >city details</a>
+    </li>
+</ul>
+
+<router-outlet></router-outlet>

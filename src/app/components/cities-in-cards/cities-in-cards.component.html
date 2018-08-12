@@ -1,0 +1,15 @@
+<h4>only cities with image</h4>
+<div *ngFor="let city of citiesInCard" class="card " 
+style="width: 15rem;display:inline-block;margin:1rem  ">
+  <img class="card-img-top" src="/assets/Picture/{{city.img}} " [alt]='city.name'>
+  <div class="card-body">
+    <h4 class="card-title">{{city.name}} </h4>
+    <p class="card-text">{{city.english_name | lowercase }} </p>
+    <p>
+      <label style="font-weight: bold">סמל יישוב:</label>
+      <label class="card-text">{{city.semel_yeshuv}} </label>
+    </p>
+    <button  (click)="goToDetais(city.semel_yeshuv)" class="btn btn-primary">לפרטים</button>
+ <!---->
+</div>
+</div>

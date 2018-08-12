@@ -1,0 +1,10 @@
+<label for="cityName">הכנס שם ישוב</label>
+<br>
+<input type="text" id="cityName" [value]="selectedCityName" (keyup)="searchCityies($event)" >
+<br>
+<select *ngIf="citiesDetailsArr && citiesDetailsArr.length > 0 " multiple >
+  <option *ngFor="let city of citiesDetailsArr; let i=index" 
+  [selected]="i===selectedIndex" >
+    {{city.name}}
+  </option>
+</select>

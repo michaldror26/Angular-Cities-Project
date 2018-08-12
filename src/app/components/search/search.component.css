@@ -1,0 +1,7 @@
+select,input{
+    width: 225px;
+}
+app-radio-to-preview,app-auto-complete,app-preview{
+    display: block;
+    margin-top:30px;
+}

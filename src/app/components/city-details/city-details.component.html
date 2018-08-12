@@ -1,0 +1,56 @@
+<table *ngIf="cityForDetails" >
+    <tr>
+     
+
+  <td colspan="2" ><img class="card-img-top" src="/assets/Picture/{{cityForDetails.img}} " [alt]='cityForDetails.name'></td>
+    </tr>
+    <tr>
+      <th> שם ישוב</th>
+      <td>{{cityForDetails.name}}</td>
+    </tr>
+    <tr>
+      <th>שם ישוב לועזי</th>
+       <td>{{cityForDetails.english_name}}</td>
+    </tr>
+    <tr>
+      <th>סמל ישוב</th>
+      <td>{{cityForDetails.semel_yeshuv}}</td>
+    </tr>
+    <tr>
+      <th>
+        סמל נפה</th>
+      <td>
+        {{cityForDetails.semel_napa}}</td>
+    </tr>
+    <tr>
+      <th>
+        שם נפה</th>
+      <td>
+        {{cityForDetails.shem_napa}}</td>
+    </tr>
+    <tr>
+      <th>
+        סמל לשכת מנא</th>
+      <td>
+        {{cityForDetails.semel_lishkat_mana}}</td>
+    </tr>
+    <tr >
+      <th>
+        לשכה</th>
+      <td>
+        {{cityForDetails.lishka}}</td>
+    </tr>
+    <tr >
+      <th>
+        סמל מועצה איזורית</th>
+      <td>
+        {{cityForDetails.semel_moatza_ezorit}}</td>
+    </tr>
+    <tr>
+      <th>
+        שם מועצה</th>
+      <td>
+        {{cityForDetails.shem_moaatza}}</td>
+    </tr>
+  
+  </table>
